@@ -1,0 +1,10 @@
+# Generated synthetic case evidence (regenerate locally)
+evidence/
+__pycache__/
+*.pyc
+.DS_Store
+# Never commit instructor-only answer keys or walkthroughs
+instructor/private/
+solutions/
+answer_key.*
+walkthrough_private.*
