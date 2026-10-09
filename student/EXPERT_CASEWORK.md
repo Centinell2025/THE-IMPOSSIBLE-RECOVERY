@@ -6,10 +6,10 @@ Generate base artifacts first, then supplemental sources:
 python3 tools/generate_evidence.py
 python3 tools/build_advanced_artifacts.py
 python3 tools/verify_evidence.py
-python3 tools/test_case.py
+python3 tools/test_advanced.py
 ```
 
-**Note:** Running test_case.py regenerates the base package and therefore removes the supplemental files from the manifest until build_advanced_artifacts.py is rerun. For the complete evidence set, run the three commands in order: generate, build, verify.
+**Note:** The advanced test regenerates the entire synthetic evidence package and verifies it. Run the basic test separately on a clean evidence directory if desired.
 
 ## Exercise A — Electrical Failure Reconstruction
 Reconcile UPS transfer and rack battery telemetry with utility voltage. Identify what is directly observed and what is inferred about infrastructure power.
