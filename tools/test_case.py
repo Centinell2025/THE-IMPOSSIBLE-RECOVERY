@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 subprocess.run([sys.executable, str(ROOT / "tools/generate_evidence.py")], check=True)
+subprocess.run([sys.executable, str(ROOT / "tools/build_advanced_artifacts.py")], check=True)
 subprocess.run([sys.executable, str(ROOT / "tools/verify_evidence.py")], check=True)
 evidence = ROOT / "evidence"
 
