@@ -14,8 +14,8 @@ if not (OUT / "evidence_manifest.json").is_file():
 
 def csvfile(name, columns, rows):
     with (OUT / name).open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=columns)
-        writer.writeheader()
+        writer = csv.writer(f)
+        writer.writerow(columns)
         writer.writerows(rows)
 
 csvfile("ups_power_telemetry.csv",
