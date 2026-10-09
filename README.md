@@ -20,6 +20,21 @@ At 02:04 UTC, a severe thunderstorm destabilizes power and connectivity at the f
 
 Investigators must determine which observations are reliable, reconstruct the actual sequence of failures, distinguish clock drift from activity order, and identify the latest demonstrably valid recovery point. **Do not assume an intrusion occurred.**
 
+## Advanced investigation track
+
+The advanced track adds six independent evidence sources: UPS/power telemetry, network switch events, storage write integrity, emergency change control, audit forwarding, and NTP observations.
+
+```bash
+python3 tools/generate_evidence.py
+python3 tools/build_advanced_artifacts.py
+python3 tools/verify_evidence.py
+python3 tools/test_advanced.py
+```
+
+Read [Expert Casework](student/EXPERT_CASEWORK.md) for six additional cross-source investigations.
+
+**Corporate logo:** Use only the original Beacon of the Eagle LLC eagle-and-lighthouse emblem. The repository currently contains [brand asset instructions](assets/README.md), not the image binary.
+
 ## Start here
 
 1. Read [Student Introduction](student/README.md), [Case Brief](student/CASE_BRIEF.md), and [Audit Policy](policy/CONTINUITY_AND_AUDIT.md).
