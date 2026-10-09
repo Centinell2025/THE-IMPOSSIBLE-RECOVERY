@@ -14,3 +14,5 @@ jobs:
         run: python3 tools/quality_gate.py
       - name: Validate advanced evidence
         run: python3 tools/test_advanced.py
+      - name: Validate forensic scenario consistency
+        run: python3 tools/validate_case_semantics.py
