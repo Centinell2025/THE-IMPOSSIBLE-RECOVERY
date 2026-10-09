@@ -1,0 +1,9 @@
+server_id,hostname,role,os,criticality,depends_on
+SRV-01,nb-id01,Identity and Access,Windows Server,critical,SRV-07
+SRV-02,nb-app01,Application Services,Windows Server,high,SRV-01;SRV-03;SRV-07
+SRV-03,nb-db01,Database,Linux,critical,SRV-07
+SRV-04,nb-file01,File Storage,Windows Server,high,SRV-01;SRV-07
+SRV-05,nb-backup01,Backup and Recovery,Linux,critical,SRV-03;SRV-04
+SRV-06,nb-siem01,Security Monitoring,Linux,critical,SRV-07
+SRV-07,nb-net01,Network and DNS,Linux,critical,
+SRV-08,nb-audit01,Audit and Evidence,Linux,critical,SRV-07
