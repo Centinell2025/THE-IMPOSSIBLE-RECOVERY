@@ -44,11 +44,12 @@ events("SRV-05", [
     ("2026-09-18T02:10:00Z", "BACKUP_START", "RP-0210; job=BK-92"),
     ("2026-09-18T02:18:00Z", "BACKUP_COMPLETE", "RP-0210; job=BK-92; status=SUCCESS"),
 ])
-# SRV-06 clock is deliberately seven minutes ahead; do not normalize these raw records.
+# SRV-06 records are unsynchronized local wall-clock times, seven minutes ahead of UTC.
+# They intentionally omit the Z suffix: Z would falsely claim the values are UTC.
 events("SRV-06", [
-    ("2026-09-18T02:06:00Z", "CLOCK_DIAGNOSTIC", "local_clock_offset_seconds=+420"),
-    ("2026-09-18T02:25:00Z", "ALERT", "Backup job BK-92 reported SUCCESS by SRV-05"),
-    ("2026-09-18T02:34:00Z", "ALERT", "Integrity mismatch RP-0210 reported by SRV-08"),
+    ("2026-09-18T02:06:00", "CLOCK_DIAGNOSTIC", "local_clock_offset_seconds=+420"),
+    ("2026-09-18T02:25:00", "ALERT", "Backup job BK-92 reported SUCCESS by SRV-05"),
+    ("2026-09-18T02:34:00", "ALERT", "Integrity mismatch RP-0210 reported by SRV-08"),
 ])
 events("SRV-07", [
     ("2026-09-18T02:06:00Z", "LINK_DOWN", "Core uplink port eth1 unavailable"),
