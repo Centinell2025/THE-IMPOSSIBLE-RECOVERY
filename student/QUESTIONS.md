@@ -4,10 +4,10 @@ Provide an evidence citation (relative file path and record identifier) for ever
 
 1. What is the earliest timestamped external atmospheric warning in the evidence package?
 2. At what UTC time did the power monitoring feed report utility degradation?
-3. Which rack's server was affected by the UPS transfer, and what was the UTC timestamp recorded by the environmental controller?
+3. Which infrastructure component is explicitly associated with the UPS transfer in the environmental record, and at what UTC time was the transfer recorded? Distinguish this observation from the separate UPS rack telemetry.
 4. Which server's local clock is offset from UTC, by how many minutes, and in which direction?
 5. After normalizing the offset, when did the monitoring system actually record the backup-success alert?
-6. What is the first network-degradation event and which system recorded it?
+6. What is the earliest recorded network-degradation event across the available server and switch evidence, and which source recorded it? If events have different time precision, explain how you resolved their order.
 7. Which two server roles show a dependency failure after the network event?
 8. What policy-defined maximum audit gap applies during an emergency?
 9. Did the audit collector meet the required cadence during the disturbance? Cite the relevant gap.
