@@ -2,7 +2,7 @@
 
 **Case ID:** NB-IR-026  
 **Classification:** Fictional / Controlled DFIR Exercise  
-**Time standard:** UTC; local server clock offsets may differ.
+**Time standard:** UTC for synchronized sources. SRV-06 records use unsynchronized local wall-clock timestamps **without a timezone suffix**; its observed clock offset is documented in the evidence. Never interpret an unsuffixed SRV-06 timestamp as UTC.
 
 ## Organization
 
