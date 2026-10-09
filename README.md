@@ -1,4 +1,12 @@
 # THE IMPOSSIBLE RECOVERY
+
+**BEACON OF THE EAGLE LLC**  
+*Centinell Forensics Enterprise — Advanced Cybersecurity Training*
+
+**Original training concept and development: Beacon of the Eagle LLC**
+
+> **Portfolio attribution, not certification.** This repository presents a fictional training exercise. It is not a claim of approval, endorsement, certification, or intellectual-property ownership by Hack The Box or any other platform. Any future submission, publication, transfer, or attribution remains subject to applicable agreements.
+
 ### EchoTrace Case Files | Advanced DFIR Sherlock Training
 
 **Status:** Original training scenario / candidate submission — not endorsed, accepted, or difficulty-rated by Hack The Box.  
@@ -31,6 +39,12 @@ topology/          Eight-server inventory and dependency map
 tools/             Deterministic synthetic evidence generator and verifier
 evidence/          Generated locally; excluded from git by default
 ```
+
+## Developer and portfolio attribution
+
+This work is presented as part of the Beacon of the Eagle LLC cybersecurity training portfolio, under its Centinell Forensics Enterprise initiative. The organization in the story is fictional and separate from Beacon of the Eagle LLC.
+
+Brand attribution does not imply ownership of third-party names, platform formats, or trademarks. Do not reuse the branding to claim official approval or a verified production incident.
 
 ## Boundaries
 
