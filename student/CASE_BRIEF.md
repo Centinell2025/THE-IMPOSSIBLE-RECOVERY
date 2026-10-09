@@ -20,6 +20,10 @@ A severe atmospheric disturbance causes an unstable utility feed and intermitten
 - Clock offsets must be documented before timeline conclusions.
 - Business continuity and forensic integrity are separate requirements.
 
+## Investigative caution
+
+The environmental UPS-transfer record identifies an affected infrastructure component, while the UPS telemetry identifies a rack. Do not infer an exact server-to-rack mapping unless the supplied records explicitly support it. SIEM alert timestamps are local clock readings, not proof of when an upstream event was first generated or received.
+
 ## Evidence package
 
 Generate the case dataset using `python3 tools/generate_evidence.py`. The generator creates eight server logs, environmental telemetry, audit checks, backup catalog and payloads, and a manifest. This is synthetic training data, not a forensic image from a real incident.
