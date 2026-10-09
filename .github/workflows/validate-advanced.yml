@@ -10,5 +10,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Check source and documentation quality
+        run: python3 tools/quality_gate.py
       - name: Validate advanced evidence
         run: python3 tools/test_advanced.py
