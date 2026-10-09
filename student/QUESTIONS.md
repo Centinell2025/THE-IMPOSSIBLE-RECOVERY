@@ -4,7 +4,7 @@ Provide an evidence citation (relative file path and record identifier) for ever
 
 1. What is the earliest timestamped external atmospheric warning in the evidence package?
 2. At what UTC time did the power monitoring feed report utility degradation?
-3. Which server logged the UPS transfer, and what was its recorded timestamp?
+3. Which rack's server was affected by the UPS transfer, and what was the UTC timestamp recorded by the environmental controller?
 4. Which server's local clock is offset from UTC, by how many minutes, and in which direction?
 5. After normalizing the offset, when did the monitoring system actually record the backup-success alert?
 6. What is the first network-degradation event and which system recorded it?
@@ -16,7 +16,7 @@ Provide an evidence citation (relative file path and record identifier) for ever
 12. Which source provides the recovery job's claimed status, and which independent source contradicts it?
 13. Was there evidence of unauthorized privileged login in the supplied identity log? Distinguish absence of evidence from proof of absence.
 14. What was the UTC order of: atmospheric warning, utility degradation, network loss, backup completion claim, and integrity audit?
-15. What is the earliest defensible recovery point and what limitation should accompany that recommendation?
+15. What is the latest defensible recovery point and what limitation should accompany that recommendation?
 16. Which artifacts would you prioritize preserving before attempting a second recovery?
 17. Explain one way a time-normalization error could create a false incident narrative.
 18. Draft a short executive finding separating confirmed facts, unresolved questions, and operational recommendations.
