@@ -33,6 +33,12 @@ Expected: all commands exit 0. A successful test validates deterministic generat
 - [ ] Accessibility and readability checked
 - [ ] Second analyst blind solve completed
 
+## Reviewer findings requiring resolution
+- [ ] Verify every question against the generated artifacts and eliminate multi-answer wording.
+- [ ] Distinguish upstream event time from SIEM alert observation/ingestion time.
+- [ ] Confirm whether environmental component identifiers and rack identifiers can be joined without assumptions.
+- [ ] Perform a blind solve and verify answer uniqueness, evidence provenance, and expected grading.
+
 ## Known limitations
 Current artifacts are **synthetic CSV logs and small sample binary payloads**, not raw EVTX, journal, packet capture, memory, or disk images. The exercise is useful for correlation practice but cannot yet be described as an independently validated Insane-level Sherlock.
 
