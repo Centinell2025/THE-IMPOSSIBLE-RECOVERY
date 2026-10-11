@@ -72,3 +72,7 @@ The generator produces an evidence manifest with SHA-256 hashes. Run the verifie
 ## Development readiness
 
 This is a runnable advanced training **prototype**, not yet a verified HTB-ready Insane Sherlock. Independent solve testing, final question grading, accessibility checks, and official submission packaging remain necessary.
+
+
+---
+**Ethical and educational use / Uso ético y educativo:** This is a fictional or simulated defensive cybersecurity training exercise. Test only systems you own or are explicitly authorized to assess. / Ejercicio de ciberseguridad defensiva ficticio o simulado. Realice pruebas solo en sistemas propios o con autorización expresa. See / Consulte [Educational Purpose Notice](EDUCATIONAL_PURPOSE_NOTICE.md).
